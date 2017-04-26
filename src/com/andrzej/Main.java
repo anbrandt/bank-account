@@ -19,7 +19,7 @@ public class Main {
         //dodawanie parametrów każdego kolejnego konta wykorzystuje zbyt dużo zasobów, więc można
         //to elegancko zastąpić korzystając z konstruktora, który jest definiowany w klasie Account public Account
         Account kontoBankoweTadeusza = new Account(234525, 4000, "Tadzio Tadzio", "email@email.com", "046899988");
-
+        Account kontoBankoweAndrzej = new Account(245435, 3000, "Andrzej Brandt", "brandt@andrzej.com", "098727623");
 //        kontoBankoweTadeusza.setAccountBalance(900);
 //        kontoBankoweTadeusza.setAccountNumber(4564545);
 //        kontoBankoweTadeusza.setAccountHolderEmail("tadeusz.dzierzynki@gmail.com");
@@ -29,6 +29,10 @@ public class Main {
         kontoBankoweTadeusza.setAccountBalance(5000);
         kontoBankoweTadeusza.Deposit(500);
         System.out.println("Na koncie bankowym Tadeusza znajduje się obecnie " + kontoBankoweTadeusza.getAccountBalance() + " złotych");
+
+        kontoBankoweAndrzej.setAccountBalance(5000);
+        kontoBankoweAndrzej.Deposit(4000);
+        System.out.println("Na koncie Andrzej " + kontoBankoweAndrzej.getAccountBalance() + "złotych");
 
         //po ustaleniu wyjściowych parametrów możemy pobawić się metodami i sprawdzić jak się kompilują
 //        kontoBankoweAndrzeja.Withdrawal(400);
